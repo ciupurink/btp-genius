@@ -1,38 +1,117 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7faff;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
+  margin-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  font-size: 36px;
+  color: #2F80ED;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.slogan {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #2F80ED;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-secondary {
+  background-color: #e0e0e0;
+  color: #333;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Stiluri pentru pagina Connexion */
+
+.connexion-container {
+  width: 400px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.connexion-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.connexion-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.connexion-form label {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.connexion-form input {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.forgot-password {
+  margin-top: 10px;
+  text-align: center;
+  color: #2F80ED;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.signup-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.signup-link a {
+  color: #2F80ED;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Stiluri pentru pagina CreerDevis (temporar) */
+.creer-devis-container {
+  text-align: center;
+  margin-top: 50px;
 }
