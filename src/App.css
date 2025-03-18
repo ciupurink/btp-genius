@@ -110,8 +110,48 @@ body {
   text-decoration: underline;
 }
 
-/* Stiluri pentru pagina CreerDevis (temporar) */
+/* Stiluri pentru pagina CreerDevis */
+
 .creer-devis-container {
+  width: 600px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.creer-devis-container h2 {
   text-align: center;
-  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.devis-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.devis-form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.devis-form input,
+.devis-form textarea {
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.devis-form textarea {
+  height: 100px;
+}
+
+.devis-form button {
+  align-self: center;
+  width: 200px;
 }

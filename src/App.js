@@ -47,12 +47,30 @@ function CreerDevis() {
   return (
     <div className="creer-devis-container">
       <h2>Créer un nouveau devis</h2>
-      <p>(Această pagină va fi dezvoltată ulterior)</p>
+
+      <form className="devis-form">
+        <label>Nom du client :</label>
+        <input type="text" placeholder="Entrez le nom du client" />
+
+        <label>Adresse du chantier :</label>
+        <input type="text" placeholder="Entrez l'adresse du chantier" />
+
+        <label>Date du devis :</label>
+        <input type="date" />
+
+        <label>Description des travaux :</label>
+        <textarea placeholder="Décrivez les travaux à réaliser"></textarea>
+
+        <label>Prix estimatif (€) :</label>
+        <input type="number" placeholder="Entrez le prix estimatif" />
+
+        <button type="submit" className="btn btn-primary">Générer le devis</button>
+      </form>
     </div>
   );
 }
 
-// Componenta principală App
+// Componenta principala App
 function App() {
   return (
     <div>
